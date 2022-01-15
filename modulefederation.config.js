@@ -1,9 +1,9 @@
 const deps = require("./package.json").dependencies;
 
 module.exports = {
-  name: "child-app",
+  name: "ChildApp",
   exposes: {
-    "./App": "./src/App",
+    "./ChildApp": "./src/App",
   },
   filename: "remoteEntry.js",
   shared: {
