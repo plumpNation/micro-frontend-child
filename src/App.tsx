@@ -2,13 +2,13 @@ import React, { FC } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const App: FC<{ name?: string }> = ({ name = "<No name supplied>" }) => {
+const App: FC<{ info?: { name: string, age: number } }> = ({ info = { name: "<No name supplied>", age: 0 } }) => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.tsx</code> {name} and save to reload.
+          Welcome to {info.name} who is {info.age} years old.
         </p>
         <a
           className="App-link"
