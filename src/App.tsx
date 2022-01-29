@@ -1,8 +1,9 @@
-import React, { FC } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const App: FC<{ info?: { name: string, age: number } }> = ({ info = { name: "<No name supplied>", age: 0 } }) => {
+import type { ChildApp } from 'mfe-types';
+
+const App: ChildApp = ({ info = { name: "<No name supplied>", age: 0 } }) => {
   return (
     <div className="App">
       <header className="App-header">
